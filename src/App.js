@@ -125,7 +125,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Aprendendo React + fireBase :D</h1>
+      <h1>React + fireBase :D</h1>
       <div className='container'>
           
 
@@ -153,8 +153,8 @@ function App() {
           value = {autor}
           onChange={(e) => setAutor(e.target.value)}
           />
-
-          <button onClick={handleAdd}>Cadastrar</button>
+          <br/>
+          <button onClick={handleAdd}>Cadastrar</button> <br/>
           <button onClick={searchPost}>Buscar posts</button>
           <br/>
           <button onClick={editPost}>atualizar post</button> 
@@ -165,7 +165,7 @@ function App() {
                 <li key={post.id}>
                   <strong>ID: {post.id} </strong> <br/>
                   <span>titulo: {post.titulo}</span> <br/>
-                  <span>autor: {post.autor}</span> 
+                  <span>autor: {post.autor}</span> <br/>
                   <button onClick={()=> excluirPost(post.id)}>Excluir</button> <br/><br/>
                   
                 </li>
